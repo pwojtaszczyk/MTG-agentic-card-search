@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtg-agentic-frontend"
+version = "0.1.0"
+description = "Gradio frontend for MTG agentic search"
+requires-python = ">=3.10"
+dependencies = [
+  "gradio",
+  "httpx",
+  "python-dotenv",
+]
+
+[project.scripts]
+mtg-card-search-frontend = "frontend.app:main"
+
+[tool.setuptools]
+packages = ["frontend"]
+
+[tool.setuptools.package-dir]
+frontend = "."

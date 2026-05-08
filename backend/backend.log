@@ -1,0 +1,19 @@
+INFO:     Started server process [482583]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [482869]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[profile][2a49aeb4] request received
+[profile][2a49aeb4] [+  1838.96 ms | total   1838.96 ms] agent called search tool
+[profile][2a49aeb4] [+  1171.81 ms | total   3010.77 ms] agent called search tool
+[profile][2a49aeb4] [+  1027.10 ms | total   4037.87 ms] agent responded to front end
+INFO:     127.0.0.1:50038 - "POST /search HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [482869]

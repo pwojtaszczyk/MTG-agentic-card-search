@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtg-card-search-backend"
+version = "0.1.0"
+description = "FastAPI backend for MTG card search"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "openai",
+  "openai-agents",
+  "python-dotenv",
+  "httpx",
+  "tqdm",
+  "sqlite-vec",
+]
+
+[project.scripts]
+mtg-card-search-backend = "backend.cli:main"
+
+[tool.setuptools]
+packages = [
+  "backend",
+  "backend.agent",
+  "backend.agent.tools",
+  "backend.database",
+  "backend.utils",
+]
+
+[tool.setuptools.package-dir]
+backend = "."
+"backend.database" = "database"
+"backend.utils" = "utils"
+"backend.agent" = "agent"
+"backend.agent.tools" = "agent/tools"

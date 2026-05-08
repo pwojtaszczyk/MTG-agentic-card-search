@@ -1,0 +1,20 @@
+# Environment files
+.env
+backend/.env
+frontend/.env
+
+# Virtual environments
+.venv/
+backend/.venv/
+frontend/.venv/
+
+# Generated database
+backend/database/*.db
+
+# Packaging/build artifacts (frontend/backend packages)
+backend/build/
+frontend/build/
+__pycache__/
+dist/
+*.pyc
+*.egg-info/
